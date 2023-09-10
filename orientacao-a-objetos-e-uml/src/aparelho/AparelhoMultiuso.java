@@ -1,12 +1,13 @@
 package aparelho;
 
-import aparelho.aparelhotelefonico.Telefone;
-import aparelho.aparelhotelefonico.TelefoneAbst;
 import aparelho.aparelhotelefonico.TelefoneIntfc;
+import aparelho.navegadorinternet.NavegadorIntf;
 import aparelho.reprodutormusical.ReproducaoIntfc;
-import aparelho.reprodutormusical.ReprodutorMusical;
 
-public class AparelhoMultiuso implements ReproducaoIntfc, TelefoneIntfc {
+/**
+ * Classe com Herança Múltipla.
+ */
+public class AparelhoMultiuso implements ReproducaoIntfc, TelefoneIntfc, NavegadorIntf {
 
 
   @Override
@@ -37,5 +38,20 @@ public class AparelhoMultiuso implements ReproducaoIntfc, TelefoneIntfc {
   @Override
   public void iniciarCorreioVoz() {
     System.out.println("Correio de voz.");
+  }
+
+  @Override
+  public void exibirPagina() {
+    System.out.println("Exibindo a página.");
+  }
+
+  @Override
+  public void adicionarNovaAba() {
+    System.out.println("Adicionando página.");
+  }
+
+  @Override
+  public void atualizarPagina() {
+    System.out.println("Atualizando página.");
   }
 }
