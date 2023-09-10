@@ -6,5 +6,5 @@ public interface ReproducaoIntfc {
 
   void pausar();
 
-  void selecionarMusica();
+  void selecionarMusica(String nome);
 }

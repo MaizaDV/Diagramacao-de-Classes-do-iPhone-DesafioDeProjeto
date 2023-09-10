@@ -5,10 +5,19 @@ import aparelho.reprodutormusical.ReprodutorMusical;
 public class Main {
 
   public static void main(String[] args) {
-    ReprodutorMusical aparelho = new ReprodutorMusical("Los Hermanos.");
-    aparelho.selecionarMusica();
+    AparelhoMultiuso aparelho = new AparelhoMultiuso();
+
+    System.out.println("------------->");
+    aparelho.selecionarMusica("Los Hermanos");
     aparelho.tocar();
     aparelho.pausar();
+
+    System.out.println("------------->");
+    aparelho.atender();
+    aparelho.iniciarCorreioVoz();
+    aparelho.ligar(40028922);
+
+    System.out.println("------------->");
   }
 
 }
