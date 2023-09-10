@@ -1,7 +1,5 @@
 package aparelho.reprodutormusical;
 
-import aparelho.reprodutormusical.ReproducaoIntfc;
-
 public abstract class ReproducaoAbst implements ReproducaoIntfc {
 
   protected String nome;
@@ -21,7 +19,8 @@ public abstract class ReproducaoAbst implements ReproducaoIntfc {
   }
 
   @Override
-  public void selecionarMusica() {
+  public void selecionarMusica(String nome) {
+    this.nome = nome;
     System.out.println(nome + " selecionada");
   }
 
