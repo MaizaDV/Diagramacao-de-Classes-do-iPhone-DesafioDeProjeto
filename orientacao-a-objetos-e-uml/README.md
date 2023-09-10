@@ -2,4 +2,4 @@
 
 Feito na ferramenta [drawio](https://www.drawio.com/).
 
-![Diagram](../../diagram/dio_uml_iphone.drawio.png)
+![Diagram](../diagram/dio_uml_iphone.drawio.png)
